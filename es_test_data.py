@@ -302,7 +302,7 @@ if __name__ == '__main__':
     tornado.options.define("index_type", type=str, default='test_type', help="Type")
     tornado.options.define("batch_size", type=int, default=1000, help="Elasticsearch bulk index batch size")
     tornado.options.define("num_of_shards", type=int, default=2, help="Number of shards for ES index")
-    tornado.options.define("refresh_interval", type=string, default='1s', help="Index refresh interval")
+    tornado.options.define("refresh_interval", type=str, default='1s', help="Index refresh interval")
     tornado.options.define("http_upload_timeout", type=int, default=3, help="Timeout in seconds when uploading data")
     tornado.options.define("count", type=int, default=100000, help="Number of docs to generate")
     tornado.options.define("format", type=str, default='name:str,age:int,last_updated:ts', help="message format")
