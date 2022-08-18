@@ -68,7 +68,6 @@ def create_index(idx_name):
 @tornado.gen.coroutine
 def upload_batch(upload_data_txt):
     try:
-        print(upload_data_txt)
         request = tornado.httpclient.HTTPRequest(tornado.options.options.es_url + "/_bulk",
                                                  method="POST",
                                                  body=upload_data_txt,
