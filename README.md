@@ -100,6 +100,7 @@ ptions, here are the most important ones:
   If it doesn't exist it'll be created with these options
   - `--num_of_shards=2` the number of shards for the index
   - `--num_of_replicas=0` the number of replicas for the index
+  - `--refresh_interval=1s` index refresh interval
 - `--batch_size=###` we use bulk upload to send the docs to ES, this option
   controls how many we send at a time
 - `--force_init_index=False` if `True` it will delete and re-create the index
